@@ -1,1 +1,229 @@
 /* Root Variables */
+
+:root
+{
+    /* font and size variables */
+    --font-family: "Arial", sans-serif;
+    --h1-font-size: 4.5rem;
+    --universal-p-button-font-size: 1.25rem;
+    --hero-p-and-h2-font-size: 2.25rem; /* specific font size for hero banner */
+
+    /* color variables */
+    --hero-and-find-location-hover-color: #005A8F;
+    --body-background-color: #F1F5F9;
+    --header-section-aside-find-location-hover-color: #FFFFFF;
+    --signin-bg-register-preorder-active-color: #BD3A5A;
+    --signin-bg-register-preorder-hover-color: #84283F;
+    --footer-background-color: #002439;
+    --hero-h1-p-find-location-border-active-footer-p-color: #F8FAFC;
+
+}
+
+/* global functions */
+.inner-container
+{
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+.flex-container
+{
+    display: flex;
+    gap: 2.125rem;
+}
+
+/* global styles */
+
+body
+{
+    font-family: var(--font-family);
+    font-size: var(--universal-p-button-font-size);
+    background-color: var(--body-background-color);
+}
+
+/* specific type styles */
+
+/* nav bar styles */
+.nav-bar
+{
+    background-color: var(--header-section-aside-find-location-hover-color);
+    padding: 1rem;
+}
+
+header .flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul
+{
+    display: flex;
+    gap: 1.875rem;
+}
+
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-signin
+{
+    background-color: var(--signin-bg-register-preorder-active-color);
+    padding: 0.75rem 1rem;
+}
+
+.btn-signin > a
+{
+    text-decoration: none;
+    color: var(--hero-h1-p-find-location-border-active-footer-p-color);
+}
+
+.btn-signin:hover,
+.btn-signin:focus
+{
+    background-color: var(--signin-bg-register-preorder-hover-color);
+}
+
+/* nav bar styles end */
+
+/* hero banner styles */
+
+.hero
+{
+    background-color: var(--hero-and-find-location-hover-color);
+    padding: 5.0625rem 0 5.0625rem 0;
+    color: var(--hero-h1-p-find-location-border-active-footer-p-color);
+    flex-wrap: wrap;
+    margin-bottom: 5.0625rem;
+}
+
+.hero-flex
+{
+    display: flex;
+    gap: 2.125rem;
+    align-items: center;
+}
+
+.hero-left
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6875rem;
+}
+
+.hero-left h1
+{
+    font-size: var(--h1-font-size);
+    line-height: 100%;
+}
+
+.hero-flex > p
+{
+    font-size: var(--hero-p-and-h2-font-size);
+    line-height: 150%;
+    font-weight: 200;
+}
+
+.btn-location-finder > a
+{
+    border: solid var(--hero-h1-p-find-location-border-active-footer-p-color) 0.125rem;
+    padding: 0.75rem 1rem;
+    color: var(--hero-h1-p-find-location-border-active-footer-p-color);
+}
+
+.btn-location-finder > a:hover,
+.btn-location-finder > a:focus
+{
+    color: var(--hero-and-find-location-hover-color);
+    background-color: var(--header-section-aside-find-location-hover-color);
+    border: none;
+}
+
+.btn-location-finder > a
+{
+    text-decoration: none;
+}
+
+/* hero banner style end */
+
+/* main styles */
+
+.flex-section
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3.375rem;
+}
+
+section, aside
+{
+    background-color: var(--header-section-aside-find-location-hover-color);
+    font-weight: 300;
+}
+
+.img-banner
+{
+    flex: 5 1 75%;
+}
+
+.game-night
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+section
+{
+    flex: 3 1 75%;
+    padding: 1.6875rem;
+}
+
+aside
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 25%;
+    padding: 1.6875rem;
+    align-items: center;
+    text-align: center;
+}
+
+section h2,
+aside h2
+{
+    font-size: var(--hero-p-and-h2-font-size);
+}
+
+aside h2
+{
+    margin-bottom: 3.375rem;
+}
+
+footer
+{
+    background-color: var(--footer-background-color);
+    color: var(--hero-h1-p-find-location-border-active-footer-p-color);
+    margin-top: 5.0625rem;
+    padding: 3.375rem;
+    align-items: center;
+}
+
+
+
+
+
+
